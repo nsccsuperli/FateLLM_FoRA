@@ -1,0 +1,25 @@
+deepspeed --include=localhost:0,1  train_qlora.py \
+  --train_file /LLM/Abirate/spo_0.json \
+  --model_name_or_path /LLM/baichuan-inc/Baichuan2-7B-Chat \
+  --output_dir 19baichuan-13B-lora_-mlp_qa-output15 \
+  --prompt_column input \
+  --response_column output \
+  --cache_dir goat_cache \
+  --overwrite_cache \
+  --overwrite_output_dir \
+  --max_source_length 512 \
+  --max_target_length 512 \
+  --num_train_epochs 15 \
+  --gradient_accumulation_steps 4 \
+  --per_device_train_batch_size 1 \
+  --warmup_ratio 0.1 \
+  --lr_scheduler_type cosine \
+  --save_total_limit 1 \
+  --learning_rate 2e-5 \
+  --logging_steps 50 \
+  --save_steps 500 \
+  --lora_rank 2 \
+  --fp16 \
+  --torch_dtype float16 \
+  --preprocessing_num_workers 2 \
+  --deepspeed ds_config.json
