@@ -182,6 +182,9 @@ config = LoraConfig(r=training_args.lora_rank,
 #### 5 Acknowledgments
 We sincerely appreciate the contributions of the following methods
 >[FATE LLM ](https://github.com/FederatedAI/FATE-LLM)
+> 
 >[Baichuan-13B](https://github.com/baichuan-inc/Baichuan-13B)
+> 
 >[PEFT](https://github.com/huggingface/peft)
+> 
 >[LoRA](https://github.com/microsoft/LoRA)
