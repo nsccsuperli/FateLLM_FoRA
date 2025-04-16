@@ -188,3 +188,20 @@ We sincerely appreciate the contributions of the following methods
 >[PEFT](https://github.com/huggingface/peft)
 > 
 >[LoRA](https://github.com/microsoft/LoRA)
+
+
+## Reference
+If you find this repository useful or our work is related to your research, please kindly cite it:
+```
+@ARTICLE{10856857,
+  author={Li, Chuantao and Gu, Bruce and Zhao, Zhigang and Qu, Youyang and Xin, Guomao and Huo, Jidong and Gao, Longxiang},
+  journal={Big Data Mining and Analytics}, 
+  title={Federated Transfer Learning for On-Device LLMs Efficient Fine Tuning Optimization}, 
+  year={2025},
+  volume={8},
+  number={2},
+  pages={430-446},
+  keywords={Industries;Quantization (signal);Federated learning;Large language models;Transfer learning;Transformers;Data models;Protection;Optimization;Tuning;Federated learning;fine-tuning;deep learning;Large Language Models (LLMs)},
+  doi={10.26599/BDMA.2024.9020068}}
+
+```
